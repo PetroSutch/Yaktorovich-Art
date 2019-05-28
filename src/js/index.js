@@ -4,13 +4,12 @@ $('.navbar-nav>li>a').on('click', function(){
 function scrollToAnchor(aid){
     var aTag = $("#"+ aid);
     console.log(aTag)
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    $('html,body').animate({scrollTop: aTag.offset().top-50},'slow');
 }
 
 $(window).scroll(function(){
-	var scroll = $(window).scrollTop
-	console.log(scroll)
-	if(scroll > 200){
+	var scroll = $(window).scrollTop()
+	if(scroll > 5){
 		$('header').addClass('fixed')
 	}else{
 		$('header').removeClass('fixed')

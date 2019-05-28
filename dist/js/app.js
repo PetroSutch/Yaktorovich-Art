@@ -4,7 +4,7 @@ $('.navbar-nav>li>a').on('click', function(){
 function scrollToAnchor(aid){
     var aTag = $("#"+ aid);
     console.log(aTag)
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    $('html,body').animate({scrollTop: aTag.offset().top-50},'slow');
 }
 
 $(window).scroll(function(){
