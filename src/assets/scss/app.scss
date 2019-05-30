@@ -16,6 +16,13 @@ a{
 	text-decoration: none !important;
 }
 
+body{
+	opacity: 0;
+	transition:0.3s opacity linear;
+}
+body.show{
+	opacity: 1;
+}
 .b{
 	border: 1px solid red;
 }
@@ -69,8 +76,8 @@ a{
 		font-size: 16px;
 		font-family: "Roboto";
 		
-		padding-left: 25px;
-		padding-right: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
 		
 		padding-top: 15px;
 		padding-bottom: 15px;
@@ -404,6 +411,47 @@ a{
 	}
 }
 
+.restauration{
+	background: #42bde9;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.title-section{
+		padding-bottom: 50px;
+	}
+	.carousel-item{
+		.about-icon{
+			width: 50%;
+			font-family: 'Roboto';
+			font-size:16px;
+			font-weight: 100;
+			color: #604c45;
+			text-align: center;
+			padding-bottom: 50px;
+		}
+		img{
+			height: 400px;
+			width: auto;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		@media(max-width: 768px){
+			.about-icon{
+				width: 100%;
+			}
+			.container-img{
+				flex-direction: column;
+				align-items: center;
+				img{
+					padding-left: 0px;
+					padding-right: 0px;
+				}
+				img:nth-child(2){
+						margin-top: 30px;
+					}
+			}
+		}
+	}
+}
 .footer-site{
 	padding-top: 30px;
 	padding-bottom: 30px;

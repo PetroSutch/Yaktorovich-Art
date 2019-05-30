@@ -1,3 +1,6 @@
+$(window).on('load', function(){
+  $('body').addClass('show')
+});
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
